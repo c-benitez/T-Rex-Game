@@ -49,9 +49,7 @@
       function renderLoop() {
         ctx.clearRect(0, 0, 600, 300);
         paint();
-        if (frame < 1000) {
-          window.requestAnimationFrame(renderLoop);
-        }
+        window.requestAnimationFrame(renderLoop);
       }
 
       const state = {
